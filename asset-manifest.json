@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/test_app_deploy/static/css/main.100b4bcb.css",
-    "main.js": "/test_app_deploy/static/js/main.e83ab3bb.js",
+    "main.css": "/test_app_deploy/static/css/main.2d085e96.css",
+    "main.js": "/test_app_deploy/static/js/main.8dfb73cd.js",
     "static/js/787.ff79598f.chunk.js": "/test_app_deploy/static/js/787.ff79598f.chunk.js",
     "static/media/avatar.png": "/test_app_deploy/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/404.svg": "/test_app_deploy/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
+    "static/media/Spinner-1s-200px.svg": "/test_app_deploy/static/media/Spinner-1s-200px.b767aab46ea3fa309aff.svg",
     "static/media/closeOutline.svg": "/test_app_deploy/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
     "static/media/editIcon.svg": "/test_app_deploy/static/media/editIcon.0a0cefd2190b593b4f76bb1a5afe0c1f.svg",
     "static/media/checked.svg": "/test_app_deploy/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/test_app_deploy/index.html",
     "static/media/burger.svg": "/test_app_deploy/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.100b4bcb.css.map": "/test_app_deploy/static/css/main.100b4bcb.css.map",
-    "main.e83ab3bb.js.map": "/test_app_deploy/static/js/main.e83ab3bb.js.map",
+    "main.2d085e96.css.map": "/test_app_deploy/static/css/main.2d085e96.css.map",
+    "main.8dfb73cd.js.map": "/test_app_deploy/static/js/main.8dfb73cd.js.map",
     "787.ff79598f.chunk.js.map": "/test_app_deploy/static/js/787.ff79598f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.100b4bcb.css",
-    "static/js/main.e83ab3bb.js"
+    "static/css/main.2d085e96.css",
+    "static/js/main.8dfb73cd.js"
   ]
 }
