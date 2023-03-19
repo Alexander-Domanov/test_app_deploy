@@ -14,6 +14,12 @@
 }
 
 .errorInput {
+    border: 1px solid red;
+    width: 300px;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    background: #F6F6f6;
+    border-radius: 8px;
 }
 
 .button {

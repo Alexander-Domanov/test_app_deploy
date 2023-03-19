@@ -1,14 +1,14 @@
-import React, {ChangeEvent, KeyboardEvent} from 'react'
+import React, {ChangeEvent, KeyboardEvent,FocusEvent} from 'react'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
-    name: any // need to fix any
-    setNameCallback: any // need to fix any
-    addUser: any // need to fix any
+    name: string // need to fix any
+    setNameCallback: (e: string)=>void // need to fix any
+    addUser: (name: string)=>void // need to fix any
     onBlur: any // need to fix any
     onEnter: any // need to fix any
-    error: any // need to fix any
-    totalUsers: any // need to fix any
+    error: string // need to fix any
+    totalUsers: number // need to fix any
     lastUserName?: any // need to fix any
 }
 
@@ -25,7 +25,7 @@ const Greeting: React.FC<GreetingPropsType> = (
         lastUserName,
     } // деструктуризация пропсов
 ) => {
-    const inputClass = s.errorInput // need to fix with (?:)
+    const inputClass =  error ? s.errorInput : s.input  // need to fix with (?:)
 
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
@@ -41,10 +41,10 @@ const Greeting: React.FC<GreetingPropsType> = (
                     <input
                         id={'hw3-input'}
                         value={name}
-                        onChange={setNameCallback}
+                        onChange={(event:ChangeEvent<HTMLInputElement>)=>setNameCallback(event.currentTarget.value)}
                         className={inputClass}
-                        onKeyDown={onEnter}
-                        onBlur={onBlur}
+                        onKeyDown={(e: KeyboardEvent<HTMLInputElement>)=>onEnter(e)}
+                        onBlur={(e:FocusEvent<HTMLInputElement>)=>onBlur(name)}
                     />
                     <div id={'hw3-error'} className={s.error}>
                         {error}
@@ -53,7 +53,7 @@ const Greeting: React.FC<GreetingPropsType> = (
 
                 <button
                     id={'hw3-button'}
-                    onClick={addUser}
+                    onClick={()=>addUser(name)}
                     className={s.button}
                     disabled={!name.trim()}
                 >
